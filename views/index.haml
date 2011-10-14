@@ -3,8 +3,16 @@
 
 %form{:action => "/upload", :method => "POST", :enctype => "multipart/form-data"}
   %fieldset
-    %label{:for => "playlist"} Upload Playlist
+    %label{:for => "playlist"} Upload a Traktor Playlist or Collection
     %input{:type => "file", :name => "playlist"}
+  %fieldset
+    %label{:for => "gain"} Adjust the gain by....
+    %select{:name => "gain"}
+      %option{:value => 6}                            6db
+      %option{:value => 3}                            3db
+      %option{:value => -3, :selected => "selected"}  -3db
+      %option{:value => -6}                           -6db
+
   %fieldset
     %input{:type => "submit", :value => "And we'll convert it"}
 
