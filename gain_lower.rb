@@ -3,7 +3,7 @@ require 'sinatra'
 
 
 get "/" do
-
+  "Hello world"
 end
 
 get "/upload" do
