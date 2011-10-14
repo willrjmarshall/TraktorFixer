@@ -1,0 +1,10 @@
+%h2 Traktor's Autogain is much too loud
+%h1 We can fix it!
+
+%form{:action => "/upload", :method => "POST", :enctype => "multipart/form-data"}
+  %fieldset
+    %label{:for => "playlist"} Upload Playlist
+    %input{:type => "file", :name => "playlist"}
+  %fieldset
+    %input{:type => "submit", :value => "And we'll convert it"}
+
